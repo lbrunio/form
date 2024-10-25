@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <h1 class="title">Player Form</h1>
+    <div class="main-form">
+        <form action="index.php" method="post" enctype="multipart/form-data">
+            <h3>Name:</h3>
+            <input type="text" name="name" id="name_input" required>
+            <br>
+            <h3>Alias:</h3>
+            <input type="text" name="alias" id="alias_input" required>
+            <br>
+            <h3>Edad:</h3>
+            <input type="number" name="age" id="age_input" required>
+            <br>
+            <fieldset>
+                <legend>Weapons</legend>
+                <input type="checkbox" name="weapon1_cbox" id="weapon1">
+                <label for="weapon1"><strong>Maza</strong></label>
+                <br>
+                <input type="checkbox" name="weapon2_cbox" id="weapon2">
+                <label for="weapon2"><strong>Antorcha</strong></label>
+                <br>
+                <input type="checkbox" name="weapon3_cbox" id="weapon3">
+                <label for="weapon3"><strong>Martillo</strong></label>
+                <br>
+                <input type="checkbox" name="weapon4_cbox" id="weapon4">
+                <label for="weapon4"><strong>Latigo</strong></label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Magic?</legend>
+                <input type="radio" name="yn" id="yes" value="yes" required>
+                <label for="yes"><strong>Yes</strong></label>
+                <br>
+                <input type="radio" name="yn" id="no" value="no" required>
+                <label for="no"><strong>No</strong></label>
+            </fieldset>
+            <h3>Choose file:</h3>
+            <fieldset>
+                <input type="file" id="fileUpload" name="fileUpload" accept=".png" required>
+            </fieldset>
+            <br>
+            <input type="submit" value="Send" class="cta-button">
+            <input type="reset" value="Clear" class="cta-button">
+        </form>
+        <br>
+    </div>
+    
+</body>
+</html>
